@@ -26,7 +26,14 @@ unsigned char is_leaf(const binary_tree_t *node)
  */
 size_t depth(const binary_tree_t *tree)
 {
-	return (tree->parent != NULL ? 1 + depth(tree->parent) : 0);
+	if (tree->parent != NULL)
+	{
+		return (1 + depth(tree->parent));
+	}
+	else
+	{
+		return (0);
+	}
 }
 
 /**
@@ -39,7 +46,14 @@ const binary_tree_t *get_leaf(const binary_tree_t *tree)
 {
 	if (is_leaf(tree) == 1)
 		return (tree);
-	return (tree->left ? get_leaf(tree->left) : get_leaf(tree->right));
+	if (tree->left)
+	{
+		return (get_leaf(tree->left));
+	}
+	else
+	{
+		return (get_leaf(tree->right));
+	}
 }
 
 /**
