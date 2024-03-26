@@ -1,14 +1,12 @@
 #include "binary_trees.h"
 
-/**
- * ILA MA KHDEMCH UNCMNT HADCHI O MSA7 MN HEADER FILE
- * unsigned char is_leaf(const binary_tree_t *node);
- * size_t depth(const binary_tree_t *tree);
- * const binary_tree_t *get_leaf(const binary_tree_t *tree);
- * int is_perfect_recursive(const binary_tree_t *tree,
- * 		size_t leaf_depth, size_t level);
- * int binary_tree_is_perfect(const binary_tree_t *tree);
- */
+
+unsigned char is_leaf(const binary_tree_t *node);
+size_t depth(const binary_tree_t *tree);
+const binary_tree_t *get_leaf(const binary_tree_t *tree);
+int is_perfect_recursive(const binary_tree_t *tree,
+		size_t leaf_depth, size_t level);
+int binary_tree_is_perfect(const binary_tree_t *tree);
 
 /**
  * is_leaf - is_leaf
